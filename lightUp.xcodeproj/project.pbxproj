@@ -14,6 +14,8 @@
 		C859A6992309EB1D004AB25F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C859A6972309EB1D004AB25F /* LaunchScreen.storyboard */; };
 		C859A6A42309EB1D004AB25F /* lightUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859A6A32309EB1D004AB25F /* lightUpTests.swift */; };
 		C859A6AF2309EB1D004AB25F /* lightUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859A6AE2309EB1D004AB25F /* lightUpUITests.swift */; };
+		C859A6BE2309EBC2004AB25F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C859A6BD2309EBC2004AB25F /* AVFoundation.framework */; };
+		C859A6C22309EDDC004AB25F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C859A6C12309EDDC004AB25F /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C859A6AA2309EB1D004AB25F /* lightUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lightUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C859A6AE2309EB1D004AB25F /* lightUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightUpUITests.swift; sourceTree = "<group>"; };
 		C859A6B02309EB1D004AB25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C859A6BD2309EBC2004AB25F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C859A6C12309EDDC004AB25F /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C859A6BE2309EBC2004AB25F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 				C859A6A22309EB1D004AB25F /* lightUpTests */,
 				C859A6AD2309EB1D004AB25F /* lightUpUITests */,
 				C859A68C2309EB1B004AB25F /* Products */,
+				C859A6BC2309EBC2004AB25F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +109,7 @@
 				C859A6952309EB1D004AB25F /* Assets.xcassets */,
 				C859A6972309EB1D004AB25F /* LaunchScreen.storyboard */,
 				C859A69A2309EB1D004AB25F /* Info.plist */,
+				C859A6C12309EDDC004AB25F /* CircleView.swift */,
 			);
 			path = lightUp;
 			sourceTree = "<group>";
@@ -123,6 +130,14 @@
 				C859A6B02309EB1D004AB25F /* Info.plist */,
 			);
 			path = lightUpUITests;
+			sourceTree = "<group>";
+		};
+		C859A6BC2309EBC2004AB25F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C859A6BD2309EBC2004AB25F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C859A6C22309EDDC004AB25F /* CircleView.swift in Sources */,
 				C859A6912309EB1B004AB25F /* ViewController.swift in Sources */,
 				C859A68F2309EB1B004AB25F /* AppDelegate.swift in Sources */,
 			);
@@ -432,7 +448,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = lightUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +457,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kb.lightUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +467,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = lightUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kb.lightUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
